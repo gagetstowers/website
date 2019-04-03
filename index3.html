@@ -22,11 +22,16 @@
 
         <p>
         <script>
+        <!-- creates an input box -->
         document.write("PLEASE INPUT AN ACTION BELOW:")
         var inputBox = document.createElement("input");
         inputBox.type="text";
         document.body.appendChild(inputBox);
 
+        var inputString = document.getElementbyID(inputBox).value;
+        if(inputString=="a"){
+        window.alert("test");
+        }
         </script>
         </p>
             
