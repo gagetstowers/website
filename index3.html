@@ -21,18 +21,18 @@
     </header>
 
         <p>
-        <script>
+        PLEASE INPUT AN ACTION BELOW:
         <!-- creates an input box -->
-        document.write("PLEASE INPUT AN ACTION BELOW:")
-        var inputBox = document.createElement("input");
-        inputBox.type="text";
-        document.body.appendChild(inputBox);
+        <form id="textBox"> <input name="input" type="text"> </form>
+        <form id="okBox"> <input type="button" value="OK" onclick="input()" </form> 
+        
+        <script>
         function input(){
-        var inputString = document.getElementbyID(inputBox).value;
-        if(inputString=="a"){
-        window.alert("test");}}
+        var x = document.getElementbyId("textBox");
+        var inputString = x.elements["name"];
+        document.write("input is: " + inputString)}
         </script>
-        <form> <input type="button" value="OK" onclick="input()" </form>  
+         
         </p>
             
             
