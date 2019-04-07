@@ -17,7 +17,7 @@ function ChangeCaptcha() {
 function check() { 
     if(document.getElementById('CaptchaEnter').value == document.getElementById('randomfield').value ) {
     
-        window.open('contactPage.html','_self');
+        window.open("contactPage.html",'_self');
         
     }
     else {
