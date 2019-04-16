@@ -1,3 +1,4 @@
+
 <!doctype>
 <html lang='en'>
 <head>
@@ -27,12 +28,17 @@
         <!-- creates an input box -->
         <form id="textBox"> <input name="input" type="text"> </form>
         <form id="okBox"> <input type="button" value="OK" onclick="input()" </form> 
+        <div id="output"></div>
         
         <script>
-        function input(){
-        var x = document.getElementById("textBox").value;
-        var inputString = x;
-        document.write("input is: " + inputString)}
+        setInterval(function(){
+          function input(){
+          var o=document.getElementById("output"),v=document.getElementById("textBox").value;
+            if(o.textContent!==undefined){
+                   o.textContent=v; }
+            else {
+                   o.innerText=v; }}
+        },500);
         </script>
          
         </p>
