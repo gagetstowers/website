@@ -1,0 +1,32 @@
+
+<!DOCTYPE html><!--placeholder, this doesn't currently do anything-->
+
+<html lang="en">
+
+<head>
+  <title>DOM-BASED XSS TESTING</title>
+  <style type="text/css">
+    body {background-color: #000000; color: #FFFFFF; font-family: courier;
+    text-align: center; }
+    h1 {line-height: 200%; letter-spacing: 2px;}
+    h1 {font-weight:5000;}
+    h2 {line-height: 25%}
+    h3 {line-height: 32%;text-indent:0px;}
+    h4 {font-size: 18;line-height:90%;}
+  </style>
+</head>
+
+<body>
+  <h1>MY NEW WEBPAGE</h1>
+  <h2>Please do not hack me</h2>
+   
+ <script src='javascript/DOMXSS.js' language='JavaScript'></script><script 
+ src='javascript/escape.js' language='JavaScript'></script>
+ <h1 id='greeting'></h1>Enter your name: 
+ <input value='' onKeyUp='displayGreeting(person.value)' name='person' 
+ type='TEXT'><br><br><input name='SUBMIT' type='SUBMIT' 
+ value='Submit Solution'>
+
+
+</body>
+</html>
