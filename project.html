@@ -18,8 +18,10 @@
 
 <body>
   <h1>MY NEW WEBPAGE</h1>
-  <h2 id="p1">Hello, GUESTUSER1! Please do not break my webpage!</h2>
-   
+  <h2 id="h2">Hello, GUESTUSER1! Please do not break my webpage!</h2>
+  <p id="p1"></p>
+
+ /*** code authored 
  <script>
    var currentSearch=document.location.search;
    var searchParams=new URLSearchParams(currentSearch);
@@ -27,7 +29,7 @@
    var username=searchParams.get('name');
    
    if (username!=null){
-     document.getElementById('p1').innerHTML='Hello, '+username+'! '+'Please do not break my webpage!'; }
+     document.getElementById('h2').innerHTML='Hello, '+username+'! '+'Please do not break my webpage!'; }
    
    var redir= searchParams.get('redir'); }
    
