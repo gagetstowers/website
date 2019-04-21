@@ -18,15 +18,28 @@
 
 <body>
   <h1>MY NEW WEBPAGE</h1>
-  <h2>Please do not hack me</h2>
+  <h2 id="p1">Hello, GUESTUSER1! Please do not break my webpage!</h2>
    
- <script src='javascript/DOMXSS.js' language='JavaScript'></script><script 
- src='javascript/escape.js' language='JavaScript'></script>
- <h1 id='greeting'></h1>Enter your name: 
- <input value='' onKeyUp='displayGreeting(person.value)' name='person' 
- type='TEXT'><br><br><input name='SUBMIT' type='SUBMIT' 
- value='Submit Solution'>
-
-
-</body>
-</html>
+ <script>
+   var currentSearch=document.location.search;
+   var searchParams=new URLSearchParams(currentSearch);
+   
+   var username=searchParams.get('name');
+   
+   if (username!=null){
+     document.getElementById('p1').innerHTML='Hello, '+username+'! '+'Please do not break my webpage!'; }
+   
+   var redir= searchParams.get('redir'); }
+   
+   var nasdaq='AAAA';
+   var dowjones ='BBBB';
+   var sp500='CCCC';
+   
+   var market= [];
+   var index= searchParams.get('index').toString();
+   
+   eval('market.index='+index);
+   
+   document.getElementById('p1').innerHTML='Current market index is ' + market.index + '.';
+   
+  </script></body></html>
