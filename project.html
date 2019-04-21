@@ -18,7 +18,7 @@
 
 <body>
   <h1>MY NEW WEBPAGE</h1>
-  <h2 id="h2">Hello, GUESTUSER1! Please do not break my webpage<3</h2>
+  <h2 id="h2">Hello, GUESTUSER1! Please do not break my webpage <3</h2>
   <p id="p1"></p>
 
  /*** the following is derivative of code found at https://brutelogic.com.br/blog/dom-based-xss-the-3-sinks/ ***/
@@ -31,7 +31,11 @@
    if (username!=null){
      document.getElementById('h2').innerHTML='Hello, '+username+'! '+'Please do not break my webpage!'; }
    
-   var redir= searchParams.get('redir'); }
+   var redir= searchParams.get('redir'); 
+   
+   if (redir !== null){
+     document.location.redir;
+   }
    
    var nasdaq='AAAA';
    var dowjones ='BBBB';
