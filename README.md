@@ -1,2 +1,0 @@
-# Website
-gagetstowers.github.io
